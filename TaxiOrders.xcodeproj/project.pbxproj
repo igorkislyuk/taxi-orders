@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3927B020AE108EE4FDC9889F /* TOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */; };
+		3927B0BB2F3E200285E7D011 /* TOListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */; };
+		3927B1D044D636CC0A895398 /* TOVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BCA94BA79D11E61885CE /* TOVehicle.m */; };
+		3927B1F10235627FC8623526 /* TODisplayTaxiOrdersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */; };
+		3927B3435CC74A4B3CE16AC8 /* TOListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0A584CBC1E693291B69 /* TOListDataManager.m */; };
+		3927B34A7AA65631C8FBBC5C /* TOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BEC666E0ED38915ECBE5 /* TOAppDelegate.m */; };
+		3927B66D14E6E1B4400CDA01 /* TORootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B720B72FE6097C7F2A1E /* TORootWireframe.m */; };
+		3927B6B96164E8AFB349BB5B /* TOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */; };
+		3927B7909788FF53E039C8DA /* TODisplayTaxiOrdersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */; };
+		3927B7BDEEB94BC93464ED11 /* TOListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB2015739A12DE0D48C1 /* TOListWireframe.m */; };
+		3927B983F1F7A47BF533AAD7 /* TOListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */; };
+		3927BA10FA1B27C4DE59BE61 /* TOAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B97858E319814A6003E4 /* TOAddress.m */; };
+		3927BA158A931729D9475AA3 /* TOPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */; };
+		3927BA3C97F4BCB316AF1927 /* TOListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BC0997EC73B0F02A1292 /* TOListPresenter.m */; };
+		3927BAC9604CD29F57857431 /* TOAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B47C6FECE5C048B6292D /* TOAppDependencies.m */; };
+		3927BC1ED3C1677AD9A599F3 /* TOTaxiOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */; };
+		3927BDD9C014DCEFB668960F /* TOListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B1B885EF270351374EDC /* TOListInteractor.m */; };
+		ED7CF7191DB41340009BFD95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CF7181DB41340009BFD95 /* main.m */; };
+		ED7CF7241DB41340009BFD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7CF7231DB41340009BFD95 /* Assets.xcassets */; };
+		ED7CF7271DB41340009BFD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7CF7251DB41340009BFD95 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewCell.xib; sourceTree = "<group>"; };
+		3927B0356F7D4CB10467604A /* TOPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPrice.h; sourceTree = "<group>"; };
+		3927B0A584CBC1E693291B69 /* TOListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListDataManager.m; sourceTree = "<group>"; };
+		3927B11C4060796427B4D57B /* TOListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListDataManager.h; sourceTree = "<group>"; };
+		3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewCell.m; sourceTree = "<group>"; };
+		3927B1B885EF270351374EDC /* TOListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListInteractor.m; sourceTree = "<group>"; };
+		3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewController.xib; sourceTree = "<group>"; };
+		3927B31A5BC3CF05FB649015 /* TOListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewInterface.h; sourceTree = "<group>"; };
+		3927B479EDF4D1B9F9DEA64D /* TOListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListInteractorIO.h; sourceTree = "<group>"; };
+		3927B47C6FECE5C048B6292D /* TOAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAppDependencies.m; sourceTree = "<group>"; };
+		3927B5BCFADB5FC2E9F2F889 /* TOListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListWireframe.h; sourceTree = "<group>"; };
+		3927B5D3D85F8C3CD4E6A54E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		3927B634D67F509D7C597D80 /* TOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAppDelegate.h; sourceTree = "<group>"; };
+		3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODisplayTaxiOrdersItem.m; sourceTree = "<group>"; };
+		3927B6D1F1A4F724DA24C141 /* TOListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListPresenter.h; sourceTree = "<group>"; };
+		3927B720B72FE6097C7F2A1E /* TORootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORootWireframe.m; sourceTree = "<group>"; };
+		3927B797C8C9867049085D11 /* TaxiOrders-PrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaxiOrders-PrefixHeader.h"; sourceTree = "<group>"; };
+		3927B7C817934A261259AE5E /* TOListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListInteractor.h; sourceTree = "<group>"; };
+		3927B81E9D742C730462E9FF /* TODisplayTaxiOrdersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersData.h; sourceTree = "<group>"; };
+		3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPrice.m; sourceTree = "<group>"; };
+		3927B8E40D886A5EEE13958A /* TOVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOVehicle.h; sourceTree = "<group>"; };
+		3927B8FBC83DC7014D3A8C47 /* TODisplayTaxiOrdersItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersItem.h; sourceTree = "<group>"; };
+		3927B90C6F54C579EF1C5BCC /* TOTaxiOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTaxiOrder.h; sourceTree = "<group>"; };
+		3927B97858E319814A6003E4 /* TOAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAddress.m; sourceTree = "<group>"; };
+		3927B9F6E7C7E6672BE9DF73 /* TOAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAddress.h; sourceTree = "<group>"; };
+		3927B9FA02602A075317B427 /* TOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewController.h; sourceTree = "<group>"; };
+		3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTaxiOrder.m; sourceTree = "<group>"; };
+		3927BB2015739A12DE0D48C1 /* TOListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListWireframe.m; sourceTree = "<group>"; };
+		3927BB35FF256EF07D0F13B6 /* TOListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewCell.h; sourceTree = "<group>"; };
+		3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewController.m; sourceTree = "<group>"; };
+		3927BC0997EC73B0F02A1292 /* TOListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListPresenter.m; sourceTree = "<group>"; };
+		3927BC9D7B95CA046C458500 /* TORootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORootWireframe.h; sourceTree = "<group>"; };
+		3927BCA94BA79D11E61885CE /* TOVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOVehicle.m; sourceTree = "<group>"; };
+		3927BCEDF5C1514AAAF1CB08 /* TOListModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListModuleInterface.h; sourceTree = "<group>"; };
+		3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODisplayTaxiOrdersData.m; sourceTree = "<group>"; };
+		3927BEC666E0ED38915ECBE5 /* TOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAppDelegate.m; sourceTree = "<group>"; };
+		3927BEFDFA29E9973D9D56BA /* TOAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAppDependencies.h; sourceTree = "<group>"; };
+		ED7CF7141DB41340009BFD95 /* TaxiOrders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiOrders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7CF7181DB41340009BFD95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED7CF7231DB41340009BFD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED7CF7261DB41340009BFD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED7CF72E1DB42B9C009BFD95 /* TOListDataManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOListDataManagerConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED7CF7111DB41340009BFD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3927B10E17E9A140EC06A401 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3927BC4FB3DF695DECC8CB6A /* Model */,
+				3927BA4E8B2B3CBEA4C66E4E /* Cache */,
+				3927BECDF7F87EA0243110AE /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3927B1275432277CABBB0408 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3927B1B885EF270351374EDC /* TOListInteractor.m */,
+				3927B7C817934A261259AE5E /* TOListInteractor.h */,
+				3927B479EDF4D1B9F9DEA64D /* TOListInteractorIO.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3927B2E85BFB2C84FA6BADB8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3927B3A6B14673078BC5E07E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				3927BE1E81976030922291F7 /* Application Logic */,
+				3927BBBB271C0B3CDFC138E6 /* Module Interface */,
+				3927BF72EF4E35B34631F959 /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3927B5660DAE9852A98B3AA0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3927B0A584CBC1E693291B69 /* TOListDataManager.m */,
+				3927B11C4060796427B4D57B /* TOListDataManager.h */,
+				ED7CF72E1DB42B9C009BFD95 /* TOListDataManagerConstants.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3927B680997A7E20EA23A01E /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */,
+				3927B0356F7D4CB10467604A /* TOPrice.h */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		3927B68F500884B3DFD4E43F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3927B9FA02602A075317B427 /* TOListViewController.h */,
+				3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */,
+				3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */,
+				3927B31A5BC3CF05FB649015 /* TOListViewInterface.h */,
+				3927B7ADF6F23840EBB056C5 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3927B7ADF6F23840EBB056C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3927BB35FF256EF07D0F13B6 /* TOListViewCell.h */,
+				3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */,
+				3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3927B91C338814D7F8798989 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				3927BB2015739A12DE0D48C1 /* TOListWireframe.m */,
+				3927B5BCFADB5FC2E9F2F889 /* TOListWireframe.h */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		3927B9D02CA35F41EF5998F3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3927BC0997EC73B0F02A1292 /* TOListPresenter.m */,
+				3927B6D1F1A4F724DA24C141 /* TOListPresenter.h */,
+				3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */,
+				3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */,
+				3927B81E9D742C730462E9FF /* TODisplayTaxiOrdersData.h */,
+				3927B8FBC83DC7014D3A8C47 /* TODisplayTaxiOrdersItem.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3927BA4E8B2B3CBEA4C66E4E /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		3927BB45BE174A7442B8BEF6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3927BEC666E0ED38915ECBE5 /* TOAppDelegate.m */,
+				3927B634D67F509D7C597D80 /* TOAppDelegate.h */,
+				3927BEFDFA29E9973D9D56BA /* TOAppDependencies.h */,
+				3927B47C6FECE5C048B6292D /* TOAppDependencies.m */,
+				3927B10E17E9A140EC06A401 /* Common */,
+				3927BC0F238225178820D42F /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3927BBBB271C0B3CDFC138E6 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3927BCEDF5C1514AAAF1CB08 /* TOListModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		3927BC0F238225178820D42F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3927B3A6B14673078BC5E07E /* List */,
+				3927B2E85BFB2C84FA6BADB8 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3927BC4FB3DF695DECC8CB6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3927BC8F4EEAB4CD195CC20B /* TaxiOrder */,
+				3927BC9263B3791AAD441C52 /* Address */,
+				3927B680997A7E20EA23A01E /* Price */,
+				3927BDA308F316E565BD34D9 /* Vehicle */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3927BC8F4EEAB4CD195CC20B /* TaxiOrder */ = {
+			isa = PBXGroup;
+			children = (
+				3927B90C6F54C579EF1C5BCC /* TOTaxiOrder.h */,
+				3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */,
+			);
+			path = TaxiOrder;
+			sourceTree = "<group>";
+		};
+		3927BC9263B3791AAD441C52 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				3927B97858E319814A6003E4 /* TOAddress.m */,
+				3927B9F6E7C7E6672BE9DF73 /* TOAddress.h */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		3927BCAE3D573F92022A642A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3927BDA308F316E565BD34D9 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				3927BCA94BA79D11E61885CE /* TOVehicle.m */,
+				3927B8E40D886A5EEE13958A /* TOVehicle.h */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		3927BE1E81976030922291F7 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3927B1275432277CABBB0408 /* Interactor */,
+				3927B5660DAE9852A98B3AA0 /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		3927BECDF7F87EA0243110AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3927B720B72FE6097C7F2A1E /* TORootWireframe.m */,
+				3927BC9D7B95CA046C458500 /* TORootWireframe.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3927BF72EF4E35B34631F959 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3927B9D02CA35F41EF5998F3 /* Presenter */,
+				3927B91C338814D7F8798989 /* Wireframe */,
+				3927B68F500884B3DFD4E43F /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		3927BF9F49E5A0C4B3AA0A8A /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				3927B5D3D85F8C3CD4E6A54E /* Info.plist */,
+				3927B797C8C9867049085D11 /* TaxiOrders-PrefixHeader.h */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		ED7CF70B1DB41340009BFD95 = {
+			isa = PBXGroup;
+			children = (
+				ED7CF7151DB41340009BFD95 /* Products */,
+				ED7CF7161DB41340009BFD95 /* TaxiOrders */,
+			);
+			sourceTree = "<group>";
+		};
+		ED7CF7151DB41340009BFD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED7CF7141DB41340009BFD95 /* TaxiOrders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED7CF7161DB41340009BFD95 /* TaxiOrders */ = {
+			isa = PBXGroup;
+			children = (
+				ED7CF7171DB41340009BFD95 /* Supporting Files */,
+				3927BB45BE174A7442B8BEF6 /* Classes */,
+				3927BCAE3D573F92022A642A /* Resources */,
+			);
+			path = TaxiOrders;
+			sourceTree = "<group>";
+		};
+		ED7CF7171DB41340009BFD95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED7CF7231DB41340009BFD95 /* Assets.xcassets */,
+				ED7CF7251DB41340009BFD95 /* LaunchScreen.storyboard */,
+				ED7CF7181DB41340009BFD95 /* main.m */,
+				3927BF9F49E5A0C4B3AA0A8A /* Configs */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED7CF7131DB41340009BFD95 /* TaxiOrders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED7CF72B1DB41340009BFD95 /* Build configuration list for PBXNativeTarget "TaxiOrders" */;
+			buildPhases = (
+				ED7CF7101DB41340009BFD95 /* Sources */,
+				ED7CF7111DB41340009BFD95 /* Frameworks */,
+				ED7CF7121DB41340009BFD95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiOrders;
+			productName = TaxiOrders;
+			productReference = ED7CF7141DB41340009BFD95 /* TaxiOrders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED7CF70C1DB41340009BFD95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TO;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Igor Kislyuk";
+				TargetAttributes = {
+					ED7CF7131DB41340009BFD95 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ED7CF70F1DB41340009BFD95 /* Build configuration list for PBXProject "TaxiOrders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED7CF70B1DB41340009BFD95;
+			productRefGroup = ED7CF7151DB41340009BFD95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED7CF7131DB41340009BFD95 /* TaxiOrders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED7CF7121DB41340009BFD95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7CF7271DB41340009BFD95 /* LaunchScreen.storyboard in Resources */,
+				ED7CF7241DB41340009BFD95 /* Assets.xcassets in Resources */,
+				3927B6B96164E8AFB349BB5B /* TOListViewController.xib in Resources */,
+				3927B0BB2F3E200285E7D011 /* TOListViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED7CF7101DB41340009BFD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7CF7191DB41340009BFD95 /* main.m in Sources */,
+				3927B34A7AA65631C8FBBC5C /* TOAppDelegate.m in Sources */,
+				3927BAC9604CD29F57857431 /* TOAppDependencies.m in Sources */,
+				3927BC1ED3C1677AD9A599F3 /* TOTaxiOrder.m in Sources */,
+				3927BA158A931729D9475AA3 /* TOPrice.m in Sources */,
+				3927BA10FA1B27C4DE59BE61 /* TOAddress.m in Sources */,
+				3927B1D044D636CC0A895398 /* TOVehicle.m in Sources */,
+				3927B66D14E6E1B4400CDA01 /* TORootWireframe.m in Sources */,
+				3927B7BDEEB94BC93464ED11 /* TOListWireframe.m in Sources */,
+				3927B020AE108EE4FDC9889F /* TOListViewController.m in Sources */,
+				3927BA3C97F4BCB316AF1927 /* TOListPresenter.m in Sources */,
+				3927BDD9C014DCEFB668960F /* TOListInteractor.m in Sources */,
+				3927B3435CC74A4B3CE16AC8 /* TOListDataManager.m in Sources */,
+				3927B983F1F7A47BF533AAD7 /* TOListViewCell.m in Sources */,
+				3927B7909788FF53E039C8DA /* TODisplayTaxiOrdersData.m in Sources */,
+				3927B1F10235627FC8623526 /* TODisplayTaxiOrdersItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED7CF7251DB41340009BFD95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED7CF7261DB41340009BFD95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED7CF7291DB41340009BFD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED7CF72A1DB41340009BFD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED7CF72C1DB41340009BFD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TaxiOrders/Supporting Files/Configs/TaxiOrders-PrefixHeader.h";
+				INFOPLIST_FILE = "$(SRCROOT)/TaxiOrders/Supporting Files/Configs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-assignment.TaxiOrders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED7CF72D1DB41340009BFD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TaxiOrders/Supporting Files/Configs/TaxiOrders-PrefixHeader.h";
+				INFOPLIST_FILE = "$(SRCROOT)/TaxiOrders/Supporting Files/Configs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test-assignment.TaxiOrders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED7CF70F1DB41340009BFD95 /* Build configuration list for PBXProject "TaxiOrders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7CF7291DB41340009BFD95 /* Debug */,
+				ED7CF72A1DB41340009BFD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED7CF72B1DB41340009BFD95 /* Build configuration list for PBXNativeTarget "TaxiOrders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7CF72C1DB41340009BFD95 /* Debug */,
+				ED7CF72D1DB41340009BFD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED7CF70C1DB41340009BFD95 /* Project object */;
+}
