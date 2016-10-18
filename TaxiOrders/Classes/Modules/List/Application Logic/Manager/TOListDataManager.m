@@ -5,12 +5,10 @@
 
 #import "TOListDataManager.h"
 #import "TOListDataManagerConstants.h"
-#import "TOAddress.h"
 #import "TOTaxiOrder.h"
-
-NSString *const TOListDataManagerStartAddressKey = @"startAddress";
-NSString *const TOListDataManagerEndAddressKey = @"endAddress";
-NSString *const TOListDataManagerIDKey = @"id";
+#import "TOAddress.h"
+#import "TOPrice.h"
+#import "TOVehicle.h"
 
 @interface TOListDataManager()
 
@@ -22,45 +20,40 @@ NSString *const TOListDataManagerIDKey = @"id";
 
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:TOListDataManagerServerAddress]];
 
+    __weak typeof(self) weakSelf = self;
     void (^pFunction)(NSData *, NSURLResponse *, NSError *)=^(NSData *data, NSURLResponse *response, NSError *error) {
 
-        NSArray *json = [NSJSONSerialization JSONObjectWithData:data
-                                                                                 options:NSJSONReadingAllowFragments
-                                                                                   error:NULL];
-
-        NSLog(@"json = %@", json);
-
-
-        NSMutableArray *orders = [[NSMutableArray alloc] init];
-
-        for (NSDictionary *dictionary in json) {
-
-            TOTaxiOrder *taxiOrder = [[TOTaxiOrder alloc] init];
-
-            //get start and end address
-            TOAddress *startAddress = [[TOAddress alloc] initWithDictionary:dictionary[TOListDataManagerStartAddressKey]];
-            TOAddress *endAddress = [[TOAddress alloc] initWithDictionary:dictionary[TOListDataManagerEndAddressKey]];
-
-
-            taxiOrder.endAddress = endAddress;
-            taxiOrder.startAddress = startAddress;
-            taxiOrder.id = [dictionary[TOListDataManagerIDKey] unsignedIntegerValue];
-
-            [orders addObject:taxiOrder];
-
+        __strong typeof(self) strongSelf = weakSelf;
+        if (!strongSelf) {
+            return;
         }
 
+        NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:NULL];
 
         //call completion
-
-        completionHandler(orders);
-
+        completionHandler([strongSelf taxiOrdersWithin:json]);
 
     };
+    
     NSURLSessionDataTask *sessionDataTask = [[NSURLSession sharedSession] dataTaskWithRequest:urlRequest
                                                                             completionHandler:pFunction];
     [sessionDataTask resume];
+}
 
+- (NSArray *)taxiOrdersWithin:(NSArray *)jsonOrders {
+
+    NSMutableArray *orders = [[NSMutableArray alloc] init];
+
+    for (NSDictionary *dictionary in jsonOrders) {
+
+        //create new order
+        TOTaxiOrder *taxiOrder = [[TOTaxiOrder alloc] initWithDictionary:dictionary];
+        
+        [orders addObject:taxiOrder];
+
+    }
+
+    return orders;
 }
 
 

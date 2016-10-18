@@ -4,6 +4,7 @@
 //
 
 #import "TOAddress.h"
+#import "NSString+TOCommon.h"
 
 NSString *const TOAddressCityKey = @"city";
 NSString *const TOAddressAddressKey = @"address";
@@ -20,17 +21,11 @@ NSString *const TOAddressAddressKey = @"address";
     if (self = [super init]) {
 
         //get value from dictionary to data
-        _cityString = [self stringFromUTF8String:userInfo[TOAddressCityKey]];
-        _addressString = [self stringFromUTF8String:userInfo[TOAddressAddressKey]];
+        _cityString = [userInfo[TOAddressCityKey] to_UTF8String];
+        _addressString = [userInfo[TOAddressAddressKey] to_UTF8String];
 
     }
     return self;
 }
-
-- (NSString *)stringFromUTF8String:(NSString *)UTF8String {
-    NSData *data = [UTF8String dataUsingEncoding:NSUTF8StringEncoding];
-    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-}
-
 
 @end

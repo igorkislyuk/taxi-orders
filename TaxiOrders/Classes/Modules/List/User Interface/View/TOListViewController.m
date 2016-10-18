@@ -55,7 +55,7 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
 
 - (void)setupTableView {
     if (self.tableView.dataSource == nil) {
-        NSLog(@"Warning");
+        NSLog(@"Warning. Data Source is empty");
     }
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

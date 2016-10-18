@@ -5,8 +5,24 @@
 
 #import "TOPrice.h"
 
+NSString *const TOPriceAmountKey = @"amount";
+NSString *const TOPriceCurrencyKey = @"currency";
 
-@implementation TOPrice {
+@implementation TOPrice
 
+- (instancetype)initWithDictionary:(NSDictionary *)json {
+    if (self = [super init]) {
+        
+        _currency = json[TOPriceCurrencyKey];
+
+        double totalNumber = [json[TOPriceAmountKey] doubleValue];
+
+        _unitPart = (NSUInteger) (totalNumber / 100);
+
+        _fractionalPart = (NSUInteger) ((totalNumber - _unitPart * 100) * 100);
+        
+    }
+    return self;
 }
+
 @end

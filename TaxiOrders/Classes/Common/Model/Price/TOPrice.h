@@ -5,6 +5,13 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface TOPrice : NSObject
+
+- (instancetype)initWithDictionary:(NSDictionary *)json;
+
+@property (nonatomic, readonly, copy) NSString *currency;
+
+@property (nonatomic, readonly, assign) NSUInteger unitPart;
+@property (nonatomic, readonly, assign) NSUInteger fractionalPart;
+
 @end

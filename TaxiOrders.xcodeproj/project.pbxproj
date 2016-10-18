@@ -22,6 +22,7 @@
 		3927BA158A931729D9475AA3 /* TOPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */; };
 		3927BA3C97F4BCB316AF1927 /* TOListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BC0997EC73B0F02A1292 /* TOListPresenter.m */; };
 		3927BAC9604CD29F57857431 /* TOAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B47C6FECE5C048B6292D /* TOAppDependencies.m */; };
+		3927BAE67C185F504CCA2B16 /* NSString+TOCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */; };
 		3927BC1ED3C1677AD9A599F3 /* TOTaxiOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */; };
 		3927BDD9C014DCEFB668960F /* TOListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B1B885EF270351374EDC /* TOListInteractor.m */; };
 		ED7CF7191DB41340009BFD95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CF7181DB41340009BFD95 /* main.m */; };
@@ -48,7 +49,9 @@
 		3927B720B72FE6097C7F2A1E /* TORootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORootWireframe.m; sourceTree = "<group>"; };
 		3927B797C8C9867049085D11 /* TaxiOrders-PrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaxiOrders-PrefixHeader.h"; sourceTree = "<group>"; };
 		3927B7C817934A261259AE5E /* TOListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListInteractor.h; sourceTree = "<group>"; };
+		3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TOCommon.m"; sourceTree = "<group>"; };
 		3927B81E9D742C730462E9FF /* TODisplayTaxiOrdersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersData.h; sourceTree = "<group>"; };
+		3927B84766E01627553C14A7 /* NSString+TOCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TOCommon.h"; sourceTree = "<group>"; };
 		3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPrice.m; sourceTree = "<group>"; };
 		3927B8E40D886A5EEE13958A /* TOVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOVehicle.h; sourceTree = "<group>"; };
 		3927B8FBC83DC7014D3A8C47 /* TODisplayTaxiOrdersItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersItem.h; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 				3927BC4FB3DF695DECC8CB6A /* Model */,
 				3927BA4E8B2B3CBEA4C66E4E /* Cache */,
 				3927BECDF7F87EA0243110AE /* View */,
+				3927B8EDA3884DE361E1140F /* Categories */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -161,6 +165,15 @@
 				3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3927B8EDA3884DE361E1140F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3927B84766E01627553C14A7 /* NSString+TOCommon.h */,
+				3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		3927B91C338814D7F8798989 /* Wireframe */ = {
@@ -429,6 +442,7 @@
 				3927B983F1F7A47BF533AAD7 /* TOListViewCell.m in Sources */,
 				3927B7909788FF53E039C8DA /* TODisplayTaxiOrdersData.m in Sources */,
 				3927B1F10235627FC8623526 /* TODisplayTaxiOrdersItem.m in Sources */,
+				3927BAE67C185F504CCA2B16 /* NSString+TOCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
