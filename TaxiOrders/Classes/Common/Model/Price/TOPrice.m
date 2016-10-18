@@ -25,4 +25,8 @@ NSString *const TOPriceCurrencyKey = @"currency";
     return self;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%u.%u %@", self.unitPart, self.fractionalPart, self.currency];
+}
+
 @end

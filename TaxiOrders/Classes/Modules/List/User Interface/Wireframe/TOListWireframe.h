@@ -16,4 +16,6 @@
 
 - (void)presentListInterfaceFromWindow:(UIWindow *)window;
 
+- (void)presentDetailInterfaceInList;
+
 @end

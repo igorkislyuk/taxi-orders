@@ -5,13 +5,15 @@
 
 #import <Foundation/Foundation.h>
 
-@class TODisplayTaxiOrdersItem;
+@class TOListDisplayTaxiOrdersItem;
 
-@interface TODisplayTaxiOrdersData : NSObject
+@interface TOListDisplayTaxiOrdersData : NSObject
 
 //There are no sections. But it rather simply to implement
 
-@property (nonatomic, strong, readonly) NSArray<TODisplayTaxiOrdersItem *>* items;
+@property (nonatomic, strong, readonly) NSArray<TOListDisplayTaxiOrdersItem *>* items;
+
+- (void)updateWithOrder:(TOListDisplayTaxiOrdersItem *)item;
 
 - (instancetype)initWithOrders:(NSArray *)orders;
 

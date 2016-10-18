@@ -7,74 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3927B020AE108EE4FDC9889F /* TOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */; };
-		3927B0BB2F3E200285E7D011 /* TOListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */; };
 		3927B1D044D636CC0A895398 /* TOVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BCA94BA79D11E61885CE /* TOVehicle.m */; };
-		3927B1F10235627FC8623526 /* TODisplayTaxiOrdersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */; };
-		3927B3435CC74A4B3CE16AC8 /* TOListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0A584CBC1E693291B69 /* TOListDataManager.m */; };
+		3927B1F10235627FC8623526 /* TOListDisplayTaxiOrdersItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6B2A6236FC353A0CEE7 /* TOListDisplayTaxiOrdersItem.m */; };
 		3927B34A7AA65631C8FBBC5C /* TOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BEC666E0ED38915ECBE5 /* TOAppDelegate.m */; };
+		3927B53DEF0080885239BD31 /* TOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927BE548EADA2352DFFF9E9 /* TOListViewController.xib */; };
 		3927B66D14E6E1B4400CDA01 /* TORootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B720B72FE6097C7F2A1E /* TORootWireframe.m */; };
-		3927B6B96164E8AFB349BB5B /* TOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */; };
-		3927B7909788FF53E039C8DA /* TODisplayTaxiOrdersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */; };
+		3927B7661BFEAD687CC2F1EE /* TOListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B92478828F42A51CF228 /* TOListViewCell.xib */; };
+		3927B7909788FF53E039C8DA /* TOListDisplayTaxiOrdersData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BEAFF56C84D164AC21D1 /* TOListDisplayTaxiOrdersData.m */; };
 		3927B7BDEEB94BC93464ED11 /* TOListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB2015739A12DE0D48C1 /* TOListWireframe.m */; };
-		3927B983F1F7A47BF533AAD7 /* TOListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */; };
 		3927BA10FA1B27C4DE59BE61 /* TOAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B97858E319814A6003E4 /* TOAddress.m */; };
 		3927BA158A931729D9475AA3 /* TOPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */; };
 		3927BA3C97F4BCB316AF1927 /* TOListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BC0997EC73B0F02A1292 /* TOListPresenter.m */; };
 		3927BAC9604CD29F57857431 /* TOAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B47C6FECE5C048B6292D /* TOAppDependencies.m */; };
 		3927BAE67C185F504CCA2B16 /* NSString+TOCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */; };
+		3927BBE13B6B48921634C342 /* TOCacheImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BCFCDA78087C05A14492 /* TOCacheImageManager.m */; };
+		3927BC18DF9CEBA431B6C7AC /* TOListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B62C69644AF10D670D6A /* TOListViewCell.m */; };
 		3927BC1ED3C1677AD9A599F3 /* TOTaxiOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */; };
+		3927BC5FC62BA666CADAC098 /* TODetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3927B558A149D0C19D8DE783 /* TODetailViewController.xib */; };
+		3927BCC002967284577F5845 /* TOListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4DD0CB55F52E70FBB07 /* TOListViewController.m */; };
 		3927BDD9C014DCEFB668960F /* TOListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B1B885EF270351374EDC /* TOListInteractor.m */; };
+		3927BF649005BFFEF0F12219 /* TODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B497D780F338D70F2B9A /* TODetailViewController.m */; };
+		ED3EF7251DB69B5A006258FD /* TOListOrdersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3EF7241DB69B5A006258FD /* TOListOrdersManager.m */; };
 		ED7CF7191DB41340009BFD95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CF7181DB41340009BFD95 /* main.m */; };
 		ED7CF7241DB41340009BFD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7CF7231DB41340009BFD95 /* Assets.xcassets */; };
 		ED7CF7271DB41340009BFD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7CF7251DB41340009BFD95 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewCell.xib; sourceTree = "<group>"; };
 		3927B0356F7D4CB10467604A /* TOPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOPrice.h; sourceTree = "<group>"; };
-		3927B0A584CBC1E693291B69 /* TOListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListDataManager.m; sourceTree = "<group>"; };
-		3927B11C4060796427B4D57B /* TOListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListDataManager.h; sourceTree = "<group>"; };
-		3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewCell.m; sourceTree = "<group>"; };
+		3927B11C4060796427B4D57B /* TOListOrdersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListOrdersManager.h; sourceTree = "<group>"; };
 		3927B1B885EF270351374EDC /* TOListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListInteractor.m; sourceTree = "<group>"; };
-		3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewController.xib; sourceTree = "<group>"; };
+		3927B1BADF899F8BF842955B /* TOListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewCell.h; sourceTree = "<group>"; };
 		3927B31A5BC3CF05FB649015 /* TOListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewInterface.h; sourceTree = "<group>"; };
 		3927B479EDF4D1B9F9DEA64D /* TOListInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListInteractorIO.h; sourceTree = "<group>"; };
 		3927B47C6FECE5C048B6292D /* TOAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAppDependencies.m; sourceTree = "<group>"; };
+		3927B497D780F338D70F2B9A /* TODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODetailViewController.m; sourceTree = "<group>"; };
+		3927B4DD0CB55F52E70FBB07 /* TOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewController.m; sourceTree = "<group>"; };
+		3927B558A149D0C19D8DE783 /* TODetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODetailViewController.xib; sourceTree = "<group>"; };
 		3927B5BCFADB5FC2E9F2F889 /* TOListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListWireframe.h; sourceTree = "<group>"; };
 		3927B5D3D85F8C3CD4E6A54E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		3927B62C69644AF10D670D6A /* TOListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewCell.m; sourceTree = "<group>"; };
 		3927B634D67F509D7C597D80 /* TOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAppDelegate.h; sourceTree = "<group>"; };
-		3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODisplayTaxiOrdersItem.m; sourceTree = "<group>"; };
+		3927B671C72478B854432C75 /* TOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewController.h; sourceTree = "<group>"; };
+		3927B6B2A6236FC353A0CEE7 /* TOListDisplayTaxiOrdersItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListDisplayTaxiOrdersItem.m; sourceTree = "<group>"; };
 		3927B6D1F1A4F724DA24C141 /* TOListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListPresenter.h; sourceTree = "<group>"; };
 		3927B720B72FE6097C7F2A1E /* TORootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TORootWireframe.m; sourceTree = "<group>"; };
 		3927B797C8C9867049085D11 /* TaxiOrders-PrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaxiOrders-PrefixHeader.h"; sourceTree = "<group>"; };
 		3927B7C817934A261259AE5E /* TOListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListInteractor.h; sourceTree = "<group>"; };
 		3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TOCommon.m"; sourceTree = "<group>"; };
-		3927B81E9D742C730462E9FF /* TODisplayTaxiOrdersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersData.h; sourceTree = "<group>"; };
+		3927B81E9D742C730462E9FF /* TOListDisplayTaxiOrdersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListDisplayTaxiOrdersData.h; sourceTree = "<group>"; };
 		3927B84766E01627553C14A7 /* NSString+TOCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TOCommon.h"; sourceTree = "<group>"; };
 		3927B8D1ACB5A58ECBFC53B5 /* TOPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOPrice.m; sourceTree = "<group>"; };
 		3927B8E40D886A5EEE13958A /* TOVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOVehicle.h; sourceTree = "<group>"; };
-		3927B8FBC83DC7014D3A8C47 /* TODisplayTaxiOrdersItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODisplayTaxiOrdersItem.h; sourceTree = "<group>"; };
+		3927B8FBC83DC7014D3A8C47 /* TOListDisplayTaxiOrdersItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListDisplayTaxiOrdersItem.h; sourceTree = "<group>"; };
 		3927B90C6F54C579EF1C5BCC /* TOTaxiOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTaxiOrder.h; sourceTree = "<group>"; };
+		3927B9188B900E28A32675B1 /* TODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODetailViewController.h; sourceTree = "<group>"; };
+		3927B92478828F42A51CF228 /* TOListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewCell.xib; sourceTree = "<group>"; };
 		3927B97858E319814A6003E4 /* TOAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAddress.m; sourceTree = "<group>"; };
 		3927B9F6E7C7E6672BE9DF73 /* TOAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAddress.h; sourceTree = "<group>"; };
-		3927B9FA02602A075317B427 /* TOListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewController.h; sourceTree = "<group>"; };
 		3927BAEFABE7D917C9F05E25 /* TOTaxiOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTaxiOrder.m; sourceTree = "<group>"; };
+		3927BAFC3FB8B645E90828E1 /* TODetailViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TODetailViewInterface.h; sourceTree = "<group>"; };
 		3927BB2015739A12DE0D48C1 /* TOListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListWireframe.m; sourceTree = "<group>"; };
-		3927BB35FF256EF07D0F13B6 /* TOListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListViewCell.h; sourceTree = "<group>"; };
-		3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListViewController.m; sourceTree = "<group>"; };
+		3927BBF14519E4EEDECD540E /* TOListOrderOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListOrderOutput.h; sourceTree = "<group>"; };
 		3927BC0997EC73B0F02A1292 /* TOListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListPresenter.m; sourceTree = "<group>"; };
 		3927BC9D7B95CA046C458500 /* TORootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TORootWireframe.h; sourceTree = "<group>"; };
 		3927BCA94BA79D11E61885CE /* TOVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOVehicle.m; sourceTree = "<group>"; };
 		3927BCEDF5C1514AAAF1CB08 /* TOListModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOListModuleInterface.h; sourceTree = "<group>"; };
-		3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TODisplayTaxiOrdersData.m; sourceTree = "<group>"; };
+		3927BCFCDA78087C05A14492 /* TOCacheImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCacheImageManager.m; sourceTree = "<group>"; };
+		3927BE548EADA2352DFFF9E9 /* TOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TOListViewController.xib; sourceTree = "<group>"; };
+		3927BE70C84533560E6FC9AE /* TOCacheImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCacheImageManager.h; sourceTree = "<group>"; };
+		3927BEAFF56C84D164AC21D1 /* TOListDisplayTaxiOrdersData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListDisplayTaxiOrdersData.m; sourceTree = "<group>"; };
 		3927BEC666E0ED38915ECBE5 /* TOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOAppDelegate.m; sourceTree = "<group>"; };
 		3927BEFDFA29E9973D9D56BA /* TOAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOAppDependencies.h; sourceTree = "<group>"; };
+		3927BF4475943CEA407AEF65 /* TOCacheImageManagerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCacheImageManagerOutput.h; sourceTree = "<group>"; };
+		ED3EF7241DB69B5A006258FD /* TOListOrdersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOListOrdersManager.m; sourceTree = "<group>"; };
 		ED7CF7141DB41340009BFD95 /* TaxiOrders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiOrders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7CF7181DB41340009BFD95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED7CF7231DB41340009BFD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED7CF7261DB41340009BFD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED7CF72E1DB42B9C009BFD95 /* TOListDataManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOListDataManagerConstants.h; sourceTree = "<group>"; };
+		ED7CF72E1DB42B9C009BFD95 /* TOListOrdersManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOListOrdersManagerConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +120,6 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		3927B2E85BFB2C84FA6BADB8 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
 		3927B3A6B14673078BC5E07E /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +130,25 @@
 			path = List;
 			sourceTree = "<group>";
 		};
-		3927B5660DAE9852A98B3AA0 /* Manager */ = {
+		3927B547783C91350D21CDB6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				3927B0A584CBC1E693291B69 /* TOListDataManager.m */,
-				3927B11C4060796427B4D57B /* TOListDataManager.h */,
-				ED7CF72E1DB42B9C009BFD95 /* TOListDataManagerConstants.h */,
+				3927B1BADF899F8BF842955B /* TOListViewCell.h */,
+				3927B62C69644AF10D670D6A /* TOListViewCell.m */,
+				3927B92478828F42A51CF228 /* TOListViewCell.xib */,
 			);
-			path = Manager;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3927B5660DAE9852A98B3AA0 /* OrdersManager */ = {
+			isa = PBXGroup;
+			children = (
+				ED3EF7241DB69B5A006258FD /* TOListOrdersManager.m */,
+				3927B11C4060796427B4D57B /* TOListOrdersManager.h */,
+				ED7CF72E1DB42B9C009BFD95 /* TOListOrdersManagerConstants.h */,
+				3927BBF14519E4EEDECD540E /* TOListOrderOutput.h */,
+			);
+			path = OrdersManager;
 			sourceTree = "<group>";
 		};
 		3927B680997A7E20EA23A01E /* Price */ = {
@@ -148,23 +163,12 @@
 		3927B68F500884B3DFD4E43F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3927B9FA02602A075317B427 /* TOListViewController.h */,
-				3927BBB8BE7E123D34F7CAE7 /* TOListViewController.m */,
-				3927B2764C311BFE5B6C5E6E /* TOListViewController.xib */,
 				3927B31A5BC3CF05FB649015 /* TOListViewInterface.h */,
-				3927B7ADF6F23840EBB056C5 /* Cell */,
+				3927BB9F3968455A553D641A /* ListViewController */,
+				3927BABB7C0CB6B642FF441A /* DetailViewController */,
+				3927BAFC3FB8B645E90828E1 /* TODetailViewInterface.h */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3927B7ADF6F23840EBB056C5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				3927BB35FF256EF07D0F13B6 /* TOListViewCell.h */,
-				3927B1753002EF7FF8D92FA6 /* TOListViewCell.m */,
-				3927B0199CF5D56C8DDEEF41 /* TOListViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		3927B8EDA3884DE361E1140F /* Categories */ = {
@@ -174,6 +178,16 @@
 				3927B7E96D2CADD45633D189 /* NSString+TOCommon.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		3927B8F1D45AEF5C9DDE728B /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				3927BCFCDA78087C05A14492 /* TOCacheImageManager.m */,
+				3927BE70C84533560E6FC9AE /* TOCacheImageManager.h */,
+				3927BF4475943CEA407AEF65 /* TOCacheImageManagerOutput.h */,
+			);
+			path = CacheManager;
 			sourceTree = "<group>";
 		};
 		3927B91C338814D7F8798989 /* Wireframe */ = {
@@ -190,10 +204,10 @@
 			children = (
 				3927BC0997EC73B0F02A1292 /* TOListPresenter.m */,
 				3927B6D1F1A4F724DA24C141 /* TOListPresenter.h */,
-				3927BEAFF56C84D164AC21D1 /* TODisplayTaxiOrdersData.m */,
-				3927B6B2A6236FC353A0CEE7 /* TODisplayTaxiOrdersItem.m */,
-				3927B81E9D742C730462E9FF /* TODisplayTaxiOrdersData.h */,
-				3927B8FBC83DC7014D3A8C47 /* TODisplayTaxiOrdersItem.h */,
+				3927BEAFF56C84D164AC21D1 /* TOListDisplayTaxiOrdersData.m */,
+				3927B6B2A6236FC353A0CEE7 /* TOListDisplayTaxiOrdersItem.m */,
+				3927B81E9D742C730462E9FF /* TOListDisplayTaxiOrdersData.h */,
+				3927B8FBC83DC7014D3A8C47 /* TOListDisplayTaxiOrdersItem.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -203,6 +217,16 @@
 			children = (
 			);
 			path = Cache;
+			sourceTree = "<group>";
+		};
+		3927BABB7C0CB6B642FF441A /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3927B9188B900E28A32675B1 /* TODetailViewController.h */,
+				3927B497D780F338D70F2B9A /* TODetailViewController.m */,
+				3927B558A149D0C19D8DE783 /* TODetailViewController.xib */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 		3927BB45BE174A7442B8BEF6 /* Classes */ = {
@@ -218,6 +242,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		3927BB9F3968455A553D641A /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3927B671C72478B854432C75 /* TOListViewController.h */,
+				3927B4DD0CB55F52E70FBB07 /* TOListViewController.m */,
+				3927BE548EADA2352DFFF9E9 /* TOListViewController.xib */,
+				3927B547783C91350D21CDB6 /* Cell */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		3927BBBB271C0B3CDFC138E6 /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				3927B3A6B14673078BC5E07E /* List */,
-				3927B2E85BFB2C84FA6BADB8 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -284,7 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				3927B1275432277CABBB0408 /* Interactor */,
-				3927B5660DAE9852A98B3AA0 /* Manager */,
+				3927B5660DAE9852A98B3AA0 /* OrdersManager */,
+				3927B8F1D45AEF5C9DDE728B /* CacheManager */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";
@@ -414,8 +449,9 @@
 			files = (
 				ED7CF7271DB41340009BFD95 /* LaunchScreen.storyboard in Resources */,
 				ED7CF7241DB41340009BFD95 /* Assets.xcassets in Resources */,
-				3927B6B96164E8AFB349BB5B /* TOListViewController.xib in Resources */,
-				3927B0BB2F3E200285E7D011 /* TOListViewCell.xib in Resources */,
+				3927B53DEF0080885239BD31 /* TOListViewController.xib in Resources */,
+				3927B7661BFEAD687CC2F1EE /* TOListViewCell.xib in Resources */,
+				3927BC5FC62BA666CADAC098 /* TODetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,20 +465,22 @@
 				ED7CF7191DB41340009BFD95 /* main.m in Sources */,
 				3927B34A7AA65631C8FBBC5C /* TOAppDelegate.m in Sources */,
 				3927BAC9604CD29F57857431 /* TOAppDependencies.m in Sources */,
+				ED3EF7251DB69B5A006258FD /* TOListOrdersManager.m in Sources */,
 				3927BC1ED3C1677AD9A599F3 /* TOTaxiOrder.m in Sources */,
 				3927BA158A931729D9475AA3 /* TOPrice.m in Sources */,
 				3927BA10FA1B27C4DE59BE61 /* TOAddress.m in Sources */,
 				3927B1D044D636CC0A895398 /* TOVehicle.m in Sources */,
 				3927B66D14E6E1B4400CDA01 /* TORootWireframe.m in Sources */,
 				3927B7BDEEB94BC93464ED11 /* TOListWireframe.m in Sources */,
-				3927B020AE108EE4FDC9889F /* TOListViewController.m in Sources */,
 				3927BA3C97F4BCB316AF1927 /* TOListPresenter.m in Sources */,
 				3927BDD9C014DCEFB668960F /* TOListInteractor.m in Sources */,
-				3927B3435CC74A4B3CE16AC8 /* TOListDataManager.m in Sources */,
-				3927B983F1F7A47BF533AAD7 /* TOListViewCell.m in Sources */,
-				3927B7909788FF53E039C8DA /* TODisplayTaxiOrdersData.m in Sources */,
-				3927B1F10235627FC8623526 /* TODisplayTaxiOrdersItem.m in Sources */,
+				3927B7909788FF53E039C8DA /* TOListDisplayTaxiOrdersData.m in Sources */,
+				3927B1F10235627FC8623526 /* TOListDisplayTaxiOrdersItem.m in Sources */,
 				3927BAE67C185F504CCA2B16 /* NSString+TOCommon.m in Sources */,
+				3927BBE13B6B48921634C342 /* TOCacheImageManager.m in Sources */,
+				3927BCC002967284577F5845 /* TOListViewController.m in Sources */,
+				3927BC18DF9CEBA431B6C7AC /* TOListViewCell.m in Sources */,
+				3927BF649005BFFEF0F12219 /* TODetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

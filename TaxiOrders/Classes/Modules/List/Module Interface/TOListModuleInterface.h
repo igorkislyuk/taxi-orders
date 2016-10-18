@@ -5,8 +5,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class TOListDisplayTaxiOrdersItem;
+
 @protocol TOListModuleInterface <NSObject>
 
 - (void)startLoadData;
+
+- (BOOL)shouldLoadData;
+
+- (void)showOrderDetail:(TOListDisplayTaxiOrdersItem *)item;
 
 @end

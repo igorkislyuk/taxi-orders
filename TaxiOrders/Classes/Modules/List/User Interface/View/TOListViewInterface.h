@@ -5,11 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class TODisplayTaxiOrdersData;
+@class TOListDisplayTaxiOrdersData, TOListDisplayTaxiOrdersItem;
 
 @protocol TOListViewInterface <NSObject>
 
 - (void)showNoData;
-- (void)showTaxiOrders:(TODisplayTaxiOrdersData *)data;
+- (void)showTaxiOrders:(TOListDisplayTaxiOrdersData *)data;
+- (void)updateTaxiOrder:(TOListDisplayTaxiOrdersItem *)item;
 
 @end

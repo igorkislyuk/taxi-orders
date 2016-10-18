@@ -9,8 +9,9 @@
 #import "TOListViewController.h"
 #import "TOListModuleInterface.h"
 #import "TOListViewCell.h"
-#import "TODisplayTaxiOrdersData.h"
-#import "TODisplayTaxiOrdersItem.h"
+#import "TOListDisplayTaxiOrdersData.h"
+#import "TOListDisplayTaxiOrdersItem.h"
+#import "TOAddress.h"
 
 NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReuseIdentifier";
 
@@ -19,7 +20,7 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
 @property (nonatomic, strong) IBOutlet UIView *noDataView;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
-@property (nonatomic, strong) TODisplayTaxiOrdersData *data;
+@property (nonatomic, strong) TOListDisplayTaxiOrdersData *data;
 
 @end
 
@@ -41,14 +42,17 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
+    
+    self.navigationItem.title = @"Taxi Orders";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    [self.eventHandler startLoadData];
+    if ([self.eventHandler shouldLoadData]) {
+        
+        [self.eventHandler startLoadData];
+    }
 }
 
 #pragma mark - Helpers
@@ -59,6 +63,8 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
     }
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.tableView.rowHeight = 120.f;
 
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TOListViewCell class])
                                                bundle:nil] forCellReuseIdentifier:TOListViewControllerReuseIdentifier];
@@ -74,7 +80,7 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
     self.view = self.noDataView;
 }
 
-- (void)showTaxiOrders:(TODisplayTaxiOrdersData *)data {
+- (void)showTaxiOrders:(TOListDisplayTaxiOrdersData *)data {
 
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -91,7 +97,13 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
 
         [strongSelf reloadItems];
     });
+}
 
+- (void)updateTaxiOrder:(TOListDisplayTaxiOrdersItem *)item {
+
+    [self.data updateWithOrder:item];
+
+    [self reloadItems];
 
 }
 
@@ -102,9 +114,16 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
     TOListViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TOListViewControllerReuseIdentifier
                                                            forIndexPath:indexPath];
 
-    TODisplayTaxiOrdersItem *taxiOrdersItem = [[self.data items] objectAtIndex:indexPath.item];
+    TOListDisplayTaxiOrdersItem *taxiOrdersItem = [[self.data items] objectAtIndex:indexPath.item];
 
-    cell.cityNameLabel.text = taxiOrdersItem.cityString;
+    TOAddress *startAddress = taxiOrdersItem.taxiOrder.startAddress;
+    TOAddress *endAddress = taxiOrdersItem.taxiOrder.endAddress;
+
+    cell.cityToNameLabel.text = startAddress.cityString;
+    cell.addressToNameLabel.text = startAddress.addressString;
+
+    cell.cityFromNameLabel.text = endAddress.cityString;
+    cell.addressFromNameLabel.text = endAddress.addressString;
 
     return cell;
 
@@ -116,6 +135,19 @@ NSString *const TOListViewControllerReuseIdentifier = @"toListViewControllerReus
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //pass data and show image
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    TOListDisplayTaxiOrdersItem *item = [[self.data items] objectAtIndex:indexPath.item];
+
+    [self.eventHandler showOrderDetail:item];
+
 }
 
 @end

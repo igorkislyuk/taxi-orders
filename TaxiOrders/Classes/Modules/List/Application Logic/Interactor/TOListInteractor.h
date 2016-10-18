@@ -4,14 +4,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TOCacheImageManagerOutput.h"
+#import "TOListOrderOutput.h"
 
-@class TOListDataManager;
+@class TOListOrdersManager;
 
 @protocol TOListInteractorOutput, TOListInteractorInput;
 
-@interface TOListInteractor : NSObject <TOListInteractorInput>
-
-- (instancetype)initWithDataManager:(TOListDataManager *)listDataManager;
+@interface TOListInteractor : NSObject <TOListInteractorInput, TOCacheImageManagerOutput, TOListOrderOutput>
 
 @property (nonatomic, strong) id <TOListInteractorOutput> output;
 

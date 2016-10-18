@@ -8,40 +8,62 @@
 #import "TOListInteractor.h"
 
 //data manager
-#import "TOListDataManager.h"
+#import "TOListOrdersManager.h"
+#import "TOCacheImageManager.h"
 
 @interface TOListInteractor()
 
-@property (nonatomic, strong) TOListDataManager *dataManager;
+@property (nonatomic, strong) TOListOrdersManager *ordersManager;
+
+@property(nonatomic, strong) TOCacheImageManager *cacheManager;
 
 @end
 
 @implementation TOListInteractor
 
-- (instancetype)initWithDataManager:(TOListDataManager *)listDataManager {
-    if (self = [super init]) {
-        _dataManager = listDataManager;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _ordersManager = [[TOListOrdersManager alloc] init];
+        _cacheManager = [[TOCacheImageManager alloc] init];
+
+        _cacheManager.output = self;
+        _ordersManager.output = self;
     }
+
     return self;
 }
 
-#pragma mark - TOListInteractorInput
-
 - (void)startLoadData {
+    [self.ordersManager loadData];
+}
 
-    __weak typeof(self) welf = self;
-    void (^completionHandler)(NSArray *)=^(NSArray *taxiOrders) {
+- (BOOL)shouldLoadData {
+    return self.ordersManager.orders == nil || self.ordersManager.orders.count == 0;
+}
 
-        __strong typeof(self) strongSelf = welf;
-        if (!strongSelf) {
-            return;
-        }
+#pragma mark - TOCacheImageManagerOutput
 
-        [strongSelf.output showNewOrders:taxiOrders];
+- (void)image:(UIImage *)image didLoadForOrderID:(NSUInteger)orderID {
+    [self.ordersManager updateImageWithID:orderID image:image];
+}
 
-    };
-    [self.dataManager loadData:completionHandler];
+#pragma mark - TOListOrderOutput
+
+- (void)ordersManager:(TOListOrdersManager *)manager didLoadOrders:(NSArray<__kindof TOTaxiOrder *> *)orders {
+    if (self.output) {
+        [self.output showNewOrders:orders];
+    }
+
+    [self.cacheManager getImagesForOrders:orders];
 
 }
+
+- (void)ordersManager:(TOListOrdersManager *)manager didUpdateStyle:(TOTaxiOrder *)order {
+    if (self.output) {
+        [self.output updateOrder:order];
+    }
+}
+
 
 @end

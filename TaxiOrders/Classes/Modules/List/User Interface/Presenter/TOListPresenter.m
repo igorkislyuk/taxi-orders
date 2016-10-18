@@ -7,7 +7,12 @@
 #import "TOListModuleInterface.h"
 #import "TOListPresenter.h"
 #import "TOListViewInterface.h"
-#import "TODisplayTaxiOrdersData.h"
+#import "TOListDisplayTaxiOrdersData.h"
+#import "TODetailViewInterface.h"
+#import "TOListDisplayTaxiOrdersItem.h"
+#import "TOTaxiOrder.h"
+#import "TOVehicle.h"
+#import "TOListWireframe.h"
 
 @interface TOListPresenter()
 
@@ -24,13 +29,32 @@
 
 }
 
+- (BOOL)shouldLoadData {
+    return [self.listInteractor shouldLoadData];
+}
+
+- (void)showOrderDetail:(TOListDisplayTaxiOrdersItem *)item {
+
+    [self.detailInterface updateWithItem:item];
+    
+    [self.listWireframe presentDetailInterfaceInList];
+
+}
+
+
+#pragma mark - TOListInteractorOutput
+
 - (void)showNewOrders:(NSArray *)orders {
 
-    TODisplayTaxiOrdersData *data = [[TODisplayTaxiOrdersData alloc] initWithOrders:orders];
+    TOListDisplayTaxiOrdersData *data = [[TOListDisplayTaxiOrdersData alloc] initWithOrders:orders];
 
     [[self userInterface] showTaxiOrders:data];
 
 }
 
+- (void)updateOrder:(TOTaxiOrder *)taxiOrder {
+    
+    [self.userInterface updateTaxiOrder:[[TOListDisplayTaxiOrdersItem alloc] initWithTaxiOrder:taxiOrder]];
+}
 
 @end

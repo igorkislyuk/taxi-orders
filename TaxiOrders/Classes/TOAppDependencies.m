@@ -12,7 +12,7 @@
 #import "TOListWireframe.h"
 #import "TOListPresenter.h"
 #import "TOListInteractor.h"
-#import "TOListDataManager.h"
+#import "TOListOrdersManager.h"
 
 @interface TOAppDependencies()
 
@@ -37,8 +37,7 @@
     //List level
     TOListWireframe *listWireframe = [[TOListWireframe alloc] init];
     TOListPresenter *listPresenter = [[TOListPresenter alloc] init];
-    TOListDataManager *listDataManager = [[TOListDataManager alloc] init];
-    TOListInteractor *listInteractor = [[TOListInteractor alloc] initWithDataManager:listDataManager];
+    TOListInteractor *listInteractor = [[TOListInteractor alloc] init];
 
     listInteractor.output = listPresenter;
 
